@@ -1,0 +1,87 @@
+.logo_size{
+    width: 79px;
+    height: 49px;
+}
+.nav_height{
+    height: 60px;
+}
+.nav_color{
+    background-color: #d84f57;
+}
+.nav_position{
+    margin-left: 100px;
+}
+.nav_link_position{
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+.space_btwn_link{
+    padding-right: 20px;
+}
+.sup{
+    font-weight: bold;
+}
+.acc_position{
+    justify-content: end;
+    margin-left: 620px;
+}
+.cnt_clr{
+    background-color: #f8f4f4;
+    padding:10px 0px 1px 1.5%;
+   
+}
+.txt_sizing{
+    font-size: 18px;
+    font-weight: 700px;
+}
+.btn_size{
+    width: 130px;
+    height: 30px;
+    text-align: center;
+}
+hr{
+    color: gray;
+}
+.side_content{
+    width: 20%;
+    float: left;
+    padding-left: 1.5%;
+}
+.main_content{
+    width: 80%;
+    float: right;
+    
+}
+.carousel_position{
+    margin-left: 200px;
+}
+.bus_found{
+    font-size: 20px;
+}
+html{
+    overflow-x: hidden;
+}
+.bus_info{
+    border: 1px solid rgb(128, 128, 128,0.5);
+    
+}
+.info_opacity{
+    opacity: 0.7;
+}
+.fare{
+    margin-left: -45px;
+}
+
+.content_spacing{
+    justify-content: space-around;
+    
+}
+.wid{
+    width: 1500px;
+    
+}
+.mar_rig{
+    margin-right: 85px;
+}
