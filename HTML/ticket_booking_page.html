@@ -8,9 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <script src="https://kit.fontawesome.com/3e1abcf93c.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Booking Page</title>
     <style>
+        .rh_footer {
+            background-color: #1b2330;
+            float: right;
+        }
 
+        .l_footer {
+            float: left;
+            width: 60%;
+        }
+
+        footer {
+            bottom: 0;
+            width: 100%;
+            clear: both;
+            height: 300px;
+            font-size: 14px;
+            font-weight: 100;
+            color: #100f36;
+        }
+
+        .content_position {
+            float: right;
+            margin-right: 170px;
+        }
     </style>
 </head>
 
@@ -25,9 +48,9 @@
                     </a>
                 </li>
                 <div class="text-white nav_link_position d-flex ">
-                    <li class="nav-item space_btwn_link"><a class="nav-link" href="#">BUS TICKETS</a></li>
-                    <li class="nav-item space_btwn_link"><a class="nav-link">rYde<sup class="sup">New</sup></a></li>
-                    <li class="nav-item space_btwn_link"><a class="nav-link">redRail<sup class="sup">New</sup></a></li>
+                    <li class="nav-item space_btwn_link"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item space_btwn_link"><a class="nav-link">Bus Tickets</a></li>
+                    <li class="nav-item space_btwn_link"><a class="nav-link">Hotels</a></li>
                 </div>
                 <div class="acc_position text-white nav_link_position d-flex">
                     <li class="nav-item space_btwn_link"><a class="nav-link" href="#">Help</a></li>
@@ -64,325 +87,370 @@
         </p>
     </div>
     <hr>
-    <div class="container side_content">
-        <h5>Filters</h5>
-        <hr>
-        <div>
-            <i class="fa-solid fa-bus"></i> &nbsp;&nbsp;Live Tracking
-        </div>
-        <hr>
-        <div>
-            <i class="fa-solid fa-sun"></i>&nbsp;&nbsp; Primo bus(26)
-        </div>
-        <hr>
-        <h5>Departure Time</h5>
-        <form>
-            <div class="form-group">
-                <input type="radio" class="form-check-input" name="time">
-                <label>Before 6 am (2)</label><br>
-                <input type="radio" class="form-check-input" name="time">
-                <label>6am to 12 pm(3)</label><br>
-                <input type="radio" class="form-check-input" name="time">
-                <label>12pm to 6 pm(12)</label><br>
-                <input type="radio" class="form-check-input" name="time">
-                <label>After 6 pm (53)</label>
-            </div>
-            <hr>
-            <div>
-                <h5>Bus types</h5>
-                <input type="radio" class="form-check-input" name="type">
-                <label>SEATER(10)</label><br>
+    <div>
 
-                <input type="radio" class="form-check-input" name="type">
-                <label>SLEEPER(5)</label><br>
-                <input type="radio" class="form-check-input" name="type">
-                <label>AC(29)</label><br>
-                <input type="radio" class="form-check-input" name="type">
-                <label>NONAC(19)</label>
+        <div class="container side_content">
+            <h5>Filters</h5>
+            <hr>
+            <div>
+                <i class="fa-solid fa-bus"></i> &nbsp;&nbsp;Live Tracking
             </div>
             <hr>
             <div>
-                <h5>Seat Availability</h5>
-                <input type="radio" class="form-check-input" name="type">
-                <label>Single Seats</label>
+                <i class="fa-solid fa-sun"></i>&nbsp;&nbsp; Primo bus(26)
+            </div>
+            <hr>
+            <h5>Departure Time</h5>
+            <form>
+                <div class="form-group">
+                    <input type="radio" class="form-check-input" name="time">
+                    <label>Before 6 am (2)</label><br>
+                    <input type="radio" class="form-check-input" name="time">
+                    <label>6am to 12 pm(3)</label><br>
+                    <input type="radio" class="form-check-input" name="time">
+                    <label>12pm to 6 pm(12)</label><br>
+                    <input type="radio" class="form-check-input" name="time">
+                    <label>After 6 pm (53)</label>
+                </div>
+                <hr>
+                <div>
+                    <h5>Bus types</h5>
+                    <input type="radio" class="form-check-input" name="type">
+                    <label>SEATER(10)</label><br>
+
+                    <input type="radio" class="form-check-input" name="type">
+                    <label>SLEEPER(5)</label><br>
+                    <input type="radio" class="form-check-input" name="type">
+                    <label>AC(29)</label><br>
+                    <input type="radio" class="form-check-input" name="type">
+                    <label>NONAC(19)</label>
+                </div>
+                <hr>
+                <div>
+                    <h5>Seat Availability</h5>
+                    <input type="radio" class="form-check-input" name="type">
+                    <label>Single Seats</label>
+                </div>
+                <hr>
+                <div>
+                    <h5>Arrival Time</h5>
+                    <input type="radio" class="form-check-input" name="time">
+                    <label>Before 6 am (2)</label><br>
+                    <input type="radio" class="form-check-input" name="time">
+                    <label>6am to 12 pm(3)</label><br>
+                    <input type="radio" class="form-check-input" name="time">
+                    <label>12pm to 6 pm(12)</label><br>
+                    <input type="radio" class="form-check-input" name="time">
+                    <label>After 6 pm (53)</label>
+                </div>
+                <div>
+                    <hr>
+                    <h5>Boarding Point </h5>
+                    <input type="text" placeholder="Boarding point">
+                    <hr>
+                    <h5>Departing Point </h5>
+                    <input type="text" placeholder="Departing point">
+                    <hr>
+                    <h5>Operator </h5>
+                    <input type="text" placeholder="Operator">
+                    <hr>
+                </div>
+            </form>
+            <div>
+                <h5>Amenities</h5>
+                <ul style="list-style-type: none;">
+                    <li>Wifi(3)</li>
+                    <li>Water Bottles(58)</li>
+                    <li>Blankets(20)</li>
+                    <li>Charging Points(63)</li>
+                    <li>Toilets(3)</li>
+                    <li>Track my bus(51)</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="container main_content">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner carousel_position">
+                    <div class="carousel-item active">
+                        <img src="../Assets/PRIMO_Main.png" class="d-block w-10">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="../Assets/or.png" class="d-block w-10">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="../Assets/or.png" class="d-block w-10">
+                    </div>
+                </div>
+                <div class="btn-dark">
+                    <button type="button" class="carousel-control-prev text-dark" data-bs-target="#demo"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button type="button" class="carousel-control-next text-dark " data-bs-target="#demo"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
             </div>
             <hr>
             <div>
-                <h5>Arrival Time</h5>
-                <input type="radio" class="form-check-input" name="time">
-                <label>Before 6 am (2)</label><br>
-                <input type="radio" class="form-check-input" name="time">
-                <label>6am to 12 pm(3)</label><br>
-                <input type="radio" class="form-check-input" name="time">
-                <label>12pm to 6 pm(12)</label><br>
-                <input type="radio" class="form-check-input" name="time">
-                <label>After 6 pm (53)</label>
+                <h5>All bus ratings include safety as a major factor</h5>
             </div>
-            <div>
-                <h5>Boarding Point </h5>
-                <input type="text" placeholder="Boarding point">
-                <hr>
-                <h5>Departing Point </h5>
-                <input type="text" placeholder="Departing point">
-                <hr>
-                <h5>Operator </h5>
-                <input type="text" placeholder="Operator">
-                <hr>
+            <hr>
+            <div class="row">
+                <div class="col-sm-2">
+                    <p><span class="bus_found"><b>60 BUSES </b></span> found</p>
+                </div>
+                <div class="col-sm-8 d-flex content_spacing">
+                    <h4>Sort By:</h4>
+                    <p>Departure</p>
+                    <p>Duration</p>
+                    <p>Arrival</p>
+                    <p>Ratings</p>
+                    <p>Fare</p>
+                </div>
+                <div class="col-sm-2">
+                    <p class="info_opacity">Seats Available</p>
+                </div>
             </div>
-        </form>
-        <div>
-            <h5>Amenities</h5>
-            <ul style="list-style-type: none;">
-                <li>Wifi(3)</li>
-                <li>Water Bottles(58)</li>
-                <li>Blankets(20)</li>
-                <li>Charging Points(63)</li>
-                <li>Toilets(3)</li>
-                <li>Track my bus(51)</li>
-            </ul>
+            <div class="bus_info">
+                <div class="row p-3 wid">
+                    <div class="col-sm-4">
+                        <h6>Intrcity Smartbus</h6>
+                        <p class="info_opacity">
+                            AC Sleeper(2+1)
+                        </p>
+                        <div>
+                            <i class="fa-light fa-flask-round-potion"></i>
+                        </div>
+                        <br><br>
+                        <p class="info_opacity">1 Rest Stops</p>
+                    </div>
+                    <div class="col-sm-4 d-flex content_spacing">
+                        <p><span class="bus_found mar_rig"><b>22:45</b></span><br><br> <br> Koyambedu</p>
+                        <p class="info_opacity mar_rig">07h 02m</p>
+                        <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
+                                style="color: red;">27-Feb</span><br>
+                            Madiwala</p>
+                        <p class="mar_rig"><br><br>763 Stars</p>
+                        <p>INR<span class="bus_found mar_rig"><b>700</b></span></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="info_opacity"><br> <br>2 Seats Available</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="bus_info">
+                <div class="row p-3 wid">
+                    <div class="col-sm-4">
+                        <h6>Primo</h6>
+                        <p class="info_opacity">
+                            AC Sleeper(2+1)
+                        </p>
+                        <div>
+                            <i class="fa-light fa-flask-round-potion"></i>
+                        </div>
+                        <br><br>
+                        <p class="info_opacity">2 Rest Stops</p>
+                    </div>
+                    <div class="col-sm-4 d-flex content_spacing">
+                        <p><span class="bus_found mar_rig"><b>23:05</b></span><br><br> <br> Peelamedu</p>
+                        <p class="info_opacity mar_rig">09h 35m</p>
+                        <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
+                                style="color: red;">27-Feb</span><br>
+                            Madiwala</p>
+                        <p class="mar_rig"><br><br>1201 Stars</p>
+                        <p>INR<span class="bus_found mar_rig"><b>750</b></span></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="info_opacity"><br> <br>1 Seats Available</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="bus_info">
+                <div class="row p-3 wid">
+                    <div class="col-sm-4">
+                        <h6>Yolo Bus</h6>
+                        <p class="info_opacity">
+                            AC Sleeper(2+1)
+                        </p>
+                        <div>
+                            <i class="fa-light fa-flask-round-potion"></i>
+                        </div>
+                        <br><br>
+                        <p class="info_opacity">NO Rest Stops</p>
+                    </div>
+                    <div class="col-sm-4 d-flex content_spacing">
+                        <p><span class="bus_found mar_rig"><b>16:25</b></span><br><br> <br> T Nagar</p>
+                        <p class="info_opacity mar_rig">08h 30m</p>
+                        <p><span class="bus_found mar_rig"><b>07:32</b></span><br><br><span
+                                style="color: red;">27-Feb</span><br>
+                            Madiwala</p>
+                        <p class="mar_rig"><br><br>1119 Stars</p>
+                        <p>INR<span class="bus_found mar_rig"><b>730</b></span></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="info_opacity"><br> <br>3 Seats Available</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="bus_info">
+                <div class="row p-3 wid">
+                    <div class="col-sm-4">
+                        <h6>Primo</h6>
+                        <p class="info_opacity">
+                            AC Sleeper(2+1)
+                        </p>
+                        <div>
+                            <i class="fa-light fa-flask-round-potion"></i>
+                        </div>
+                        <br><br>
+                        <p class="info_opacity">2 Rest Stops</p>
+                    </div>
+                    <div class="col-sm-4 d-flex content_spacing">
+                        <p><span class="bus_found mar_rig"><b>23:05</b></span><br><br> <br> Peelamedu</p>
+                        <p class="info_opacity mar_rig">09h 35m</p>
+                        <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
+                                style="color: red;">27-Feb</span><br>
+                            Madiwala</p>
+                        <p class="mar_rig"><br><br>1201 Stars</p>
+                        <p>INR<span class="bus_found mar_rig"><b>750</b></span></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="info_opacity"><br> <br>1 Seats Available</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="bus_info">
+                <div class="row p-3 wid">
+                    <div class="col-sm-4">
+                        <h6>Primo</h6>
+                        <p class="info_opacity">
+                            AC Sleeper(2+1)
+                        </p>
+                        <div>
+                            <i class="fa-light fa-flask-round-potion"></i>
+                        </div>
+                        <br><br>
+                        <p class="info_opacity">2 Rest Stops</p>
+                    </div>
+                    <div class="col-sm-4 d-flex content_spacing">
+                        <p><span class="bus_found mar_rig"><b>23:05</b></span><br><br> <br> Peelamedu</p>
+                        <p class="info_opacity mar_rig">09h 35m</p>
+                        <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
+                                style="color: red;">27-Feb</span><br>
+                            Madiwala</p>
+                        <p class="mar_rig"><br><br>1201 Stars</p>
+                        <p>INR<span class="bus_found mar_rig"><b>750</b></span></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="info_opacity"><br> <br>1 Seats Available</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="bus_info">
+                <div class="row p-3 wid">
+                    <div class="col-sm-4">
+                        <h6>Primo</h6>
+                        <p class="info_opacity">
+                            AC Sleeper(2+1)
+                        </p>
+                        <div>
+                            <i class="fa-light fa-flask-round-potion"></i>
+                        </div>
+                        <br><br>
+                        <p class="info_opacity">2 Rest Stops</p>
+                    </div>
+                    <div class="col-sm-4 d-flex content_spacing">
+                        <p><span class="bus_found mar_rig"><b>23:05</b></span><br><br> <br> Peelamedu</p>
+                        <p class="info_opacity mar_rig">09h 35m</p>
+                        <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
+                                style="color: red;">27-Feb</span><br>
+                            Madiwala</p>
+                        <p class="mar_rig"><br><br>1201 Stars</p>
+                        <p>INR<span class="bus_found mar_rig"><b>750</b></span></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="info_opacity"><br> <br>1 Seats Available</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="bus_info">
+                <div class="row p-3 wid">
+                    <div class="col-sm-4">
+                        <h6>Primo</h6>
+                        <p class="info_opacity">
+                            AC Sleeper(2+1)
+                        </p>
+                        <div>
+                            <i class="fa-light fa-flask-round-potion"></i>
+                        </div>
+                        <br><br>
+                        <p class="info_opacity">2 Rest Stops</p>
+                    </div>
+                    <div class="col-sm-4 d-flex content_spacing">
+                        <p><span class="bus_found mar_rig"><b>23:05</b></span><br><br> <br> Peelamedu</p>
+                        <p class="info_opacity mar_rig">09h 35m</p>
+                        <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
+                                style="color: red;">27-Feb</span><br>
+                            Madiwala</p>
+                        <p class="mar_rig"><br><br>1201 Stars</p>
+                        <p>INR<span class="bus_found mar_rig"><b>750</b></span></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="info_opacity"><br> <br>1 Seats Available</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </div>
-    <div class="container main_content">
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner carousel_position">
-                <div class="carousel-item active">
-                    <img src="../Assets/PRIMO_Main.png" class="d-block w-10">
-                </div>
-                <div class="carousel-item ">
-                    <img src="../Assets/or.png" class="d-block w-10">
-                </div>
-                <div class="carousel-item ">
-                    <img src="../Assets/or.png" class="d-block w-10">
-                </div>
-            </div>
-            <div class="btn-dark">
-                <button type="button" class="carousel-control-prev text-dark" data-bs-target="#demo"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button type="button" class="carousel-control-next text-dark " data-bs-target="#demo"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <h5>All bus ratings include safety as a major factor</h5>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-sm-2">
-                <p><span class="bus_found"><b>60 BUSES </b></span> found</p>
-            </div>
-            <div class="col-sm-8 d-flex content_spacing">
-                <h4>Sort By:</h4>
-                <p>Departure</p>
-                <p>Duration</p>
-                <p>Arrival</p>
-                <p>Ratings</p>
-                <p>Fare</p>
-            </div>
-            <div class="col-sm-2">
-                <p class="info_opacity">Seats Available</p>
-            </div>
-        </div>
-        <div class="bus_info">
-            <div class="row p-3 wid">
-                <div class="col-sm-4">
-                    <h6>Intrcity Smartbus</h6>
-                    <p class="info_opacity">
-                        AC Sleeper(2+1)
-                    </p>
-                    <div>
-                        <i class="fa-light fa-flask-round-potion"></i>
+    <br>
+    <footer class="rh_footer">
+
+        <div class="footer-row  ">
+            <div class="clearfix rest1 promotion main-body ">
+                <div class="w-100 pR fl footer-links">
+
+                    <div class="rights-cont fr">
+                        <div class="content_position">
+                            <div class="img-cont;">
+                                <br>
+                                <img src="https://s3.rdbuz.com/web/images/home/sgp/r_logo.png">
+                            </div>
+                            <div style="color:white">
+                                redBus is the world's largest <a class="footerDescLink"
+                                    href="https://www.redbus.in/bus-tickets">online bus ticket<br>booking</a> service
+                                trusted
+                                by over 25 million<br>happy customers globally. redBus offers bus<br>ticket booking
+                                through its
+                                website,iOS and<br>Android mobile apps for all major routes.
+                            </div>
+                            <div id="social-media">
+                                <a href="https://www.facebook.com/redbus.in/"><img
+                                        src="../Assets/facebook.png" height="25px" width="25px" /></a>
+                                <a href="https://twitter.com/redBus_in"><img
+                                        src="../Assets/twitter.jpeg" height="25px" width="25px" /></a>
+
+                            </div>
+                            <div>
+                                <span class="text-white">Ⓒ</span> <span class="text-white"> 2023 ibibogroup All rights
+                                    reserved.</span>
+                            </div>
+                        </div>
+
                     </div>
-                    <br><br>
-                    <p class="info_opacity">1 Rest Stops</p>
-                </div>
-                <div class="col-sm-4 d-flex content_spacing">
-                    <p><span class="bus_found mar_rig"><b>22:45</b></span><br><br> <br> Koyambedu</p>
-                    <p class="info_opacity mar_rig">07h 02m</p>
-                    <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
-                            style="color: red;">27-Feb</span><br>
-                        Madiwala</p>
-                    <p class="mar_rig"><br><br>763 Stars</p>
-                    <p>INR<span class="bus_found mar_rig"><b>700</b></span></p>
-                </div>
-                <div class="col-sm-2">
-                    <p class="info_opacity"><br> <br>2 Seats Available</p>
                 </div>
             </div>
         </div>
-        <br>
-        <div class="bus_info">
-            <div class="row p-3 wid">
-                <div class="col-sm-4">
-                    <h6>Primo</h6>
-                    <p class="info_opacity">
-                        AC Sleeper(2+1)
-                    </p>
-                    <div>
-                        <i class="fa-light fa-flask-round-potion"></i>
-                    </div>
-                    <br><br>
-                    <p class="info_opacity">2 Rest Stops</p>
-                </div>
-                <div class="col-sm-4 d-flex content_spacing">
-                    <p><span class="bus_found mar_rig"><b>23:05</b></span><br><br> <br> Peelamedu</p>
-                    <p class="info_opacity mar_rig">09h 35m</p>
-                    <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
-                            style="color: red;">27-Feb</span><br>
-                        Madiwala</p>
-                    <p class="mar_rig"><br><br>1201 Stars</p>
-                    <p>INR<span class="bus_found mar_rig"><b>750</b></span></p>
-                </div>
-                <div class="col-sm-2">
-                    <p class="info_opacity"><br> <br>1 Seats Available</p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="bus_info">
-            <div class="row p-3 wid">
-                <div class="col-sm-4">
-                    <h6>Yolo Bus</h6>
-                    <p class="info_opacity">
-                        AC Sleeper(2+1)
-                    </p>
-                    <div>
-                        <i class="fa-light fa-flask-round-potion"></i>
-                    </div>
-                    <br><br>
-                    <p class="info_opacity">NO Rest Stops</p>
-                </div>
-                <div class="col-sm-4 d-flex content_spacing">
-                    <p><span class="bus_found mar_rig"><b>16:25</b></span><br><br> <br> T Nagar</p>
-                    <p class="info_opacity mar_rig">08h 30m</p>
-                    <p><span class="bus_found mar_rig"><b>07:32</b></span><br><br><span
-                            style="color: red;">27-Feb</span><br>
-                        Madiwala</p>
-                    <p class="mar_rig"><br><br>1119 Stars</p>
-                    <p>INR<span class="bus_found mar_rig"><b>730</b></span></p>
-                </div>
-                <div class="col-sm-2">
-                    <p class="info_opacity"><br> <br>3 Seats Available</p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="bus_info">
-            <div class="row p-3 wid">
-                <div class="col-sm-4">
-                    <h6>Primo</h6>
-                    <p class="info_opacity">
-                        AC Sleeper(2+1)
-                    </p>
-                    <div>
-                        <i class="fa-light fa-flask-round-potion"></i>
-                    </div>
-                    <br><br>
-                    <p class="info_opacity">2 Rest Stops</p>
-                </div>
-                <div class="col-sm-4 d-flex content_spacing">
-                    <p><span class="bus_found mar_rig"><b>23:05</b></span><br><br> <br> Peelamedu</p>
-                    <p class="info_opacity mar_rig">09h 35m</p>
-                    <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
-                            style="color: red;">27-Feb</span><br>
-                        Madiwala</p>
-                    <p class="mar_rig"><br><br>1201 Stars</p>
-                    <p>INR<span class="bus_found mar_rig"><b>750</b></span></p>
-                </div>
-                <div class="col-sm-2">
-                    <p class="info_opacity"><br> <br>1 Seats Available</p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="bus_info">
-            <div class="row p-3 wid">
-                <div class="col-sm-4">
-                    <h6>Primo</h6>
-                    <p class="info_opacity">
-                        AC Sleeper(2+1)
-                    </p>
-                    <div>
-                        <i class="fa-light fa-flask-round-potion"></i>
-                    </div>
-                    <br><br>
-                    <p class="info_opacity">2 Rest Stops</p>
-                </div>
-                <div class="col-sm-4 d-flex content_spacing">
-                    <p><span class="bus_found mar_rig"><b>23:05</b></span><br><br> <br> Peelamedu</p>
-                    <p class="info_opacity mar_rig">09h 35m</p>
-                    <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
-                            style="color: red;">27-Feb</span><br>
-                        Madiwala</p>
-                    <p class="mar_rig"><br><br>1201 Stars</p>
-                    <p>INR<span class="bus_found mar_rig"><b>750</b></span></p>
-                </div>
-                <div class="col-sm-2">
-                    <p class="info_opacity"><br> <br>1 Seats Available</p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="bus_info">
-            <div class="row p-3 wid">
-                <div class="col-sm-4">
-                    <h6>Primo</h6>
-                    <p class="info_opacity">
-                        AC Sleeper(2+1)
-                    </p>
-                    <div>
-                        <i class="fa-light fa-flask-round-potion"></i>
-                    </div>
-                    <br><br>
-                    <p class="info_opacity">2 Rest Stops</p>
-                </div>
-                <div class="col-sm-4 d-flex content_spacing">
-                    <p><span class="bus_found mar_rig"><b>23:05</b></span><br><br> <br> Peelamedu</p>
-                    <p class="info_opacity mar_rig">09h 35m</p>
-                    <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
-                            style="color: red;">27-Feb</span><br>
-                        Madiwala</p>
-                    <p class="mar_rig"><br><br>1201 Stars</p>
-                    <p>INR<span class="bus_found mar_rig"><b>750</b></span></p>
-                </div>
-                <div class="col-sm-2">
-                    <p class="info_opacity"><br> <br>1 Seats Available</p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="bus_info">
-            <div class="row p-3 wid">
-                <div class="col-sm-4">
-                    <h6>Primo</h6>
-                    <p class="info_opacity">
-                        AC Sleeper(2+1)
-                    </p>
-                    <div>
-                        <i class="fa-light fa-flask-round-potion"></i>
-                    </div>
-                    <br><br>
-                    <p class="info_opacity">2 Rest Stops</p>
-                </div>
-                <div class="col-sm-4 d-flex content_spacing">
-                    <p><span class="bus_found mar_rig"><b>23:05</b></span><br><br> <br> Peelamedu</p>
-                    <p class="info_opacity mar_rig">09h 35m</p>
-                    <p><span class="bus_found mar_rig"><b>05:47</b></span><br><br><span
-                            style="color: red;">27-Feb</span><br>
-                        Madiwala</p>
-                    <p class="mar_rig"><br><br>1201 Stars</p>
-                    <p>INR<span class="bus_found mar_rig"><b>750</b></span></p>
-                </div>
-                <div class="col-sm-2">
-                    <p class="info_opacity"><br> <br>1 Seats Available</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </footer>
 
 </body>
 
