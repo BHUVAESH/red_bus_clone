@@ -1,0 +1,39 @@
+.content{
+    background-color: rgb(219, 58, 58);
+    height:70%;
+    width:100%;
+    border:0px;
+    padding: 10% 10% 20% 10%;
+    display: flex;
+
+}
+.right{
+    float:left;
+    padding:10px;
+    border-radius: 0.5cm;
+    padding-right: 125px;
+    padding-bottom:150px;
+    background-color:whitesmoke;
+}
+.left{
+    float:inline-end;
+    padding: 10px 0% 10% 100px;
+    text-align: left;
+}
+.redbuddy{
+    background-color: white;
+}
+.scrollcontent{
+    background-color: grey;
+}
+.Rcontent{
+    float:right; 
+}
+.photoR{
+    float:inline-start;
+    padding:5px;
+}
+.language{
+    float:right;
+    padding-right:0px;
+}
